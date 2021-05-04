@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shoes of the day</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Feeling like:"Which pair of shoes should I choose?"</h1>
+    <p>Type in the weather, babe. I'll help you decide.</p >
+
+    <div>
+        <input type="text" id="input">
+    </div>
+    <div class="result-container">
+        <div id="result"></div>
+
+        <div class="iframe-container rainy hide">
+            <div class="iframe-div">
+                <iframe 
+                    allowfullscreen=""  
+                    height="100%" 
+                    src="https://giphy.com/embed/Um4xbb9aZQ5dSvC5au" 
+                    style="left:0;position:absolute;top:0" 
+                    width="100%"
+                >
+                </iframe>
+            </div>
+        </div>
+    
+        <div class="iframe-container sunny hide">
+            <div class="iframe-div">
+                <iframe 
+                    src="https://giphy.com/embed/3o7bu3I7YFj3NaLzhe" 
+                    width="100%" 
+                    height="100%" 
+                    style="left:0;position:absolute;top:0" 
+                    frameBorder="0" 
+                    allowFullScreen
+                >
+                </iframe>
+            </div>
+        </div>
+
+        <div class="iframe-container idk hide">
+            <div class="iframe-div">
+                <iframe 
+                    src="https://giphy.com/embed/Y0G6gc8CJu1ynAZ1nr" 
+                    width="100%" 
+                    height="100%" 
+                    style="left:0;position:absolute;top:0" 
+                    frameBorder="0" 
+                    allowFullScreen
+>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
