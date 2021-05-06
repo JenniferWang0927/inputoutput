@@ -46,7 +46,7 @@ inputElement.addEventListener("keydown",function(event){
       let selectedPics = document.createElement("img");
       
       // If letter is any of these, use the devil card
-      if (["sunny", "cloudy", "nice", "hot"].includes(weather)){
+      if (["sunny", "nice", "hot"].includes(weather)){
         selectedPics.src = sunnyURL;
         console.log(document.getElementsByClassName('rainy')[0]);
         document.getElementsByClassName('sunny')[0].classList.remove('hide');
@@ -59,7 +59,7 @@ inputElement.addEventListener("keydown",function(event){
       }
       
       // If letter is any of these, use the star card
-      if (["I don't know", "idk", "not sure"].includes(weather)){
+      if (["cloudy","I don't know", "idk", "not sure"].includes(weather)){
         selectedPics.src = idontknowURL;
         document.getElementsByClassName('idk')[0].classList.remove('hide');
       }
